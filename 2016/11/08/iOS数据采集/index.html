@@ -9,8 +9,7 @@
   <title>iOS数据采集 | Gengjf</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="数据采集当数据量大于2048，采用POST方式，否则使用GET。
-###一、Header必传数据：
-应用信息：
+一、Header必传数据：应用信息：
 
 
 _app_version     // 应用版本号
@@ -22,14 +21,13 @@ SDK信息：
 
 
 app_key=1234  // 应用key，从平台配置后获取
-device_id=e9">
+device_id=e94e15">
 <meta property="og:type" content="article">
 <meta property="og:title" content="iOS数据采集">
 <meta property="og:url" content="http://www.gengjf.com/2016/11/08/iOS数据采集/index.html">
 <meta property="og:site_name" content="Gengjf">
 <meta property="og:description" content="数据采集当数据量大于2048，采用POST方式，否则使用GET。
-###一、Header必传数据：
-应用信息：
+一、Header必传数据：应用信息：
 
 
 _app_version     // 应用版本号
@@ -41,13 +39,12 @@ SDK信息：
 
 
 app_key=1234  // 应用key，从平台配置后获取
-device_id=e9">
-<meta property="og:updated_time" content="2016-11-08T05:28:33.000Z">
+device_id=e94e15">
+<meta property="og:updated_time" content="2016-11-08T05:45:43.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="iOS数据采集">
 <meta name="twitter:description" content="数据采集当数据量大于2048，采用POST方式，否则使用GET。
-###一、Header必传数据：
-应用信息：
+一、Header必传数据：应用信息：
 
 
 _app_version     // 应用版本号
@@ -59,7 +56,7 @@ SDK信息：
 
 
 app_key=1234  // 应用key，从平台配置后获取
-device_id=e9">
+device_id=e94e15">
   
     <link rel="alternative" href="/atom.xml" title="Gengjf" type="application/atom+xml">
   
@@ -95,6 +92,10 @@ device_id=e9">
 				<li><a href="/">主页</a></li>
 	        
 				<li><a href="/tags/随笔">随笔</a></li>
+	        
+				<li><a href="/tags/iOS">iOS</a></li>
+	        
+				<li><a href="/tags/Android">Android</a></li>
 	        
 			</ul>
 		</nav>
@@ -145,6 +146,10 @@ device_id=e9">
 		        
 					<li><a href="/tags/随笔">随笔</a></li>
 		        
+					<li><a href="/tags/iOS">iOS</a></li>
+		        
+					<li><a href="/tags/Android">Android</a></li>
+		        
 				</ul>
 			</nav>
 			<nav class="header-nav">
@@ -176,8 +181,7 @@ device_id=e9">
     <div class="article-entry" itemprop="articleBody">
       
         <h1 id="数据采集"><a href="#数据采集" class="headerlink" title="数据采集"></a>数据采集</h1><p>当数据量大于2048，采用POST方式，否则使用GET。</p>
-<p>###一、Header必传数据：</p>
-<p>应用信息：</p>
+<h3 id="一、Header必传数据："><a href="#一、Header必传数据：" class="headerlink" title="一、Header必传数据："></a>一、Header必传数据：</h3><p>应用信息：</p>
 <blockquote>
 <ul>
 <li><strong>_app_version</strong>     // 应用版本号</li>
@@ -205,8 +209,8 @@ device_id=e9">
 <li><strong>_carrier</strong>            // 运营商</li>
 <li><strong>_density</strong>            // 屏幕缩放比例</li>
 <li><strong>_locale</strong>            // 系统语言</li>
-<li>==<strong>_ip</strong>                  // 设备当前IP地址==</li>
-<li>==<strong>_gps</strong>                 // 设备GPS经纬度，格式(latitude,longitude)==</li>
+<li><strong>_ip</strong>                  // 设备当前IP地址</li>
+<li><strong>_gps</strong>                 // 设备GPS经纬度，格式(latitude,longitude)</li>
 <li><strong>_cpu_current</strong>   // 当前的CPU使用率</li>
 <li><strong>_ram_current</strong>     // 当前的ram空间</li>
 <li><strong>_ram_total</strong>        // 设备ram总大小</li>
@@ -221,27 +225,24 @@ device_id=e9">
 <li><strong>_run</strong>               // 应用运行时长</li>
 </ul>
 </blockquote>
-<p>###二、初始化上传数据：</p>
-<blockquote>
+<h3 id="二、初始化上传数据："><a href="#二、初始化上传数据：" class="headerlink" title="二、初始化上传数据："></a>二、初始化上传数据：</h3><blockquote>
 <ul>
 <li><strong>begin_session=1</strong>  // 开始会话</li>
 </ul>
 </blockquote>
-<p>###三、会话心跳数据：<br>时间间隔需确定</p>
+<h3 id="三、会话心跳数据："><a href="#三、会话心跳数据：" class="headerlink" title="三、会话心跳数据："></a>三、会话心跳数据：</h3><p>时间间隔需确定</p>
 <blockquote>
 <ul>
 <li><strong>session_duration=60</strong>    //  会话与上一次间隔时间：秒</li>
 </ul>
 </blockquote>
-<p>###四、会话结束数据：</p>
-<blockquote>
+<h3 id="四、会话结束数据："><a href="#四、会话结束数据：" class="headerlink" title="四、会话结束数据："></a>四、会话结束数据：</h3><blockquote>
 <ul>
 <li><strong>end_session=1</strong>        // 会话结束</li>
 <li><strong>session_duration</strong>    // 会话与上一次间隔时间：秒</li>
 </ul>
 </blockquote>
-<p>###五、事件：</p>
-<blockquote>
+<h3 id="五、事件："><a href="#五、事件：" class="headerlink" title="五、事件："></a>五、事件：</h3><blockquote>
 <ul>
 <li><strong>events =</strong>     // events内容为json对象格式，经过URLEncode，数组格式</li>
 <li>{</li>
@@ -249,37 +250,39 @@ device_id=e9">
 <li><strong>timestamp</strong>                // 事件发生时的时间戳</li>
 <li><strong>count</strong>                    // 发生的次数</li>
 <li><strong>sum</strong>                        // 事件的特定值的总和，例如：某次网络请求的流量和</li>
-<li><p><strong>key</strong>     </p>
-<blockquote>
+<li><strong>key</strong>     </li>
+</ul>
+</blockquote>
 <pre><code>[JFCLY]_ViewController表示采集的是ViewController的相关信息
 [JFCLY]_Control表示采集的是控件的相关信息
 [JFCLY]_network表示采集的是网络信息
 [JFCLY]_Stutter表示采集的是卡顿信息
 [JFCLY]_WebView表示WebView的请求信息
-</code></pre></blockquote>
-</li>
-<li><p><strong>segmentation =</strong> {</p>
-<pre><code>// 数据格式根据key来确定，参照下面几种采集方式
-</code></pre></li>
+</code></pre><blockquote>
+<ul>
+<li><strong>segmentation =</strong> {</li>
+</ul>
+</blockquote>
+<pre><code>数据格式根据key来确定，参照下面几种采集方式
+</code></pre><blockquote>
+<ul>
 <li>}</li>
 <li>}</li>
 </ul>
 </blockquote>
-<p>#####5.1、UIViewController信息采集（key = [JFCLY]_ViewController）</p>
-<blockquote>
+<h5 id="5-1、UIViewController信息采集（key-JFCLY-ViewController）"><a href="#5-1、UIViewController信息采集（key-JFCLY-ViewController）" class="headerlink" title="5.1、UIViewController信息采集（key = [JFCLY]_ViewController）"></a>5.1、UIViewController信息采集（key = [JFCLY]_ViewController）</h5><blockquote>
 <ul>
 <li><strong>segment</strong>             // 系统标识，（iOS、macOS、watchOS、tvOS）</li>
 <li><strong>visit</strong>              // 1表示进入ViewController，否则表示退出</li>
 <li><strong>name</strong>                // UIViewController类名</li>
 <li><strong>start</strong>                // 1表示为根ViewController</li>
 <li><strong>function</strong>        // 调用的函数名</li>
-<li>==<strong>duration</strong>        // 函数运行耗时（单位：纳秒）==</li>
-<li>==<strong>threadID</strong>        // 事件线程ID==</li>
-<li>==<strong>threadName</strong>    // 事件线程名==</li>
+<li><strong>duration</strong>        // 函数运行耗时（单位：纳秒）</li>
+<li><strong>threadID</strong>        // 事件线程ID</li>
+<li><strong>threadName</strong>    // 事件线程名</li>
 </ul>
 </blockquote>
-<p>#####5.2、UIControl信息采集（key = [JFCLY]_Control）</p>
-<blockquote>
+<h5 id="5-2、UIControl信息采集（key-JFCLY-Control）"><a href="#5-2、UIControl信息采集（key-JFCLY-Control）" class="headerlink" title="5.2、UIControl信息采集（key = [JFCLY]_Control）"></a>5.2、UIControl信息采集（key = [JFCLY]_Control）</h5><blockquote>
 <ul>
 <li><strong>segment</strong>         // 系统标识，（iOS、macOS、watchOS、tvOS）</li>
 <li><strong>name</strong>            // 控件类名</li>
@@ -287,43 +290,41 @@ device_id=e9">
 <li><strong>viewController</strong>    // 控件所属的viewController</li>
 <li><strong>function</strong>        // 调用的函数名</li>
 <li><strong>frame</strong>            // 控件的坐标信息（x, y, width, height）</li>
-<li>==<strong>duration</strong>    // 事件响应耗时（单位：纳秒）== </li>
-<li>==<strong>threadID</strong>    // 事件线程ID==</li>
-<li>==<strong>threadName</strong>    // 事件线程名==</li>
+<li><strong>duration</strong>    // 事件响应耗时（单位：纳秒） </li>
+<li><strong>threadID</strong>    // 事件线程ID</li>
+<li><strong>threadName</strong>    // 事件线程名</li>
 </ul>
 </blockquote>
-<p>#####5.3、网络信息采集（key = [JFCLY]_network）</p>
-<blockquote>
+<h5 id="5-3、网络信息采集（key-JFCLY-network）"><a href="#5-3、网络信息采集（key-JFCLY-network）" class="headerlink" title="5.3、网络信息采集（key = [JFCLY]_network）"></a>5.3、网络信息采集（key = [JFCLY]_network）</h5><blockquote>
 <ul>
 <li><strong>segment</strong>             // 系统标识，（iOS、macOS、watchOS、tvOS）</li>
 <li><strong>absolute</strong>            // 网络请求的url</li>
 <li><strong>statusCode</strong>        // 网络请求的状态码（如果小于0或者大于等于400则为请求出错）</li>
-<li>==<strong>statusMsg</strong>        // 网络请求状态描述（statusCode为错误情况时的描述）==</li>
-<li>==<strong>stackSymbols</strong>    // 网络出错时的栈信息==</li>
+<li><strong>statusMsg</strong>        // 网络请求状态描述（statusCode为错误情况时的描述）</li>
+<li><strong>stackSymbols</strong>    // 网络出错时的栈信息</li>
 <li><strong>host</strong>                // 网络请求的Host</li>
 <li><strong>path</strong>                // 网络请求的path</li>
-<li>==<strong>threadID</strong>        // 事件线程ID==</li>
-<li><p>==<strong>threadName</strong>    // 事件线程名==</p>
+<li><strong>threadID</strong>        // 事件线程ID</li>
+<li><p><strong>threadName</strong>    // 事件线程名</p>
 </li>
 <li><p><strong>connectionType</strong>    // 网络请求的连接类型：</p>
-<blockquote>
+</li>
+</ul>
+</blockquote>
 <pre><code>0 无连接
 1 wifi
 2 GPRS
 3 2G
 4 3G
 5 LTE
-</code></pre></blockquote>
+</code></pre><h5 id="5-4、WebView信息采集（key-JFCLY-WebView）"><a href="#5-4、WebView信息采集（key-JFCLY-WebView）" class="headerlink" title="5.4、WebView信息采集（key = [JFCLY]_WebView）"></a>5.4、WebView信息采集（key = [JFCLY]_WebView）</h5><blockquote>
+<ul>
+<li><p><strong>domain</strong>        // 域名</p>
+</li>
+<li><p><strong>error_list</strong>    // 错误列表，数组</p>
 </li>
 </ul>
 </blockquote>
-<p>#####==5.4、WebView信息采集（key = [JFCLY]_WebView）==</p>
-<blockquote>
-<ul>
-<li><p>==<strong>domain</strong>        // 域名==</p>
-</li>
-<li><p>==<strong>error_list</strong>    // 错误列表，数组==<br>&gt;</p>
-<blockquote>
 <pre><code>column = 772;
 line = 3;
 msg = &quot;SecurityError: DOM Exception 18: An attempt was made to break through the security policy of the user agent.&quot;;
@@ -331,9 +332,11 @@ stack = &quot;SecurityError: DOM Exception 18: An attempt was made to break thro
 time = 1478159318619;
 type = SecurityError;
 url = &quot;http://m.leju.com/resources/js/dist/app/mLejuV4/index/index.js&quot;;
-</code></pre></blockquote>
-</li>
-<li><p>==<strong>navigationTiming</strong>    // 时间统计信息==<br>&gt;</p>
+</code></pre><blockquote>
+<ul>
+<li><strong>navigationTiming</strong>    // 时间统计信息</li>
+</ul>
+</blockquote>
 <pre><code>navigationStart = 1478142703277; // 准备加载新页面的起始时间
 redirectStart = 0; // 如果发生了HTTP重定向，并且从导航开始，中间的每次重定向，都和当前文档同域的话，就返回开始重定向的timing.fetchStart的值。其他情况，则返回0
 redirectEnd = 0; // 如果发生了HTTP重定向，并且从导航开始，中间的每次重定向，都和当前文档同域的话，就返回最后一次重定向，接收到最后一个字节数据后的那个时间.其他情况则返回0
@@ -356,22 +359,29 @@ responseStart = 1478142704245; // 返回用户代理从服务器、缓存、本�
 pageTime = 1478142707701;
 unloadEventEnd = 0;
 unloadEventStart = 0;
-</code></pre></li>
-<li>==<strong>uri</strong>        // 请求的uri==</li>
-<li>==<strong>url</strong>       // 请求的URL==</li>
+</code></pre><blockquote>
+<ul>
+<li><strong>uri</strong>        // 请求的uri</li>
+<li><strong>url</strong>       // 请求的URL</li>
 </ul>
 </blockquote>
-<p>页面相关时间计算公式：<br>==<strong>DNS查询耗时 ：domainLookupEnd - domainLookupStart<br>TCP链接耗时 ：connectEnd - connectStart<br>request请求耗时 ：responseEnd - responseStart<br>解析dom树耗时 ： domComplete- domInteractive<br>白屏时间 ：responseStart - navigationStart<br>domready时间 ：domContentLoadedEventEnd - navigationStart<br>页面耗时 ：pageTime - navigationStart<br>onload时间 ：loadEventEnd - navigationStart</strong>==</p>
-<p>#####5.4、卡顿信息采集（key = [JFCLY]_Stutter）当卡顿时间超过150ms时采集</p>
-<blockquote>
+<pre><code>页面相关时间计算公式： 
+DNS查询耗时 ：domainLookupEnd - domainLookupStart
+TCP链接耗时 ：connectEnd - connectStart
+request请求耗时 ：responseEnd - responseStart
+解析dom树耗时 ： domComplete- domInteractive
+白屏时间 ：responseStart - navigationStart
+domready时间 ：domContentLoadedEventEnd - navigationStart
+页面耗时 ：pageTime - navigationStart
+onload时间 ：loadEventEnd - navigationStart
+</code></pre><h5 id="5-4、卡顿信息采集（key-JFCLY-Stutter）当卡顿时间超过150ms时采集"><a href="#5-4、卡顿信息采集（key-JFCLY-Stutter）当卡顿时间超过150ms时采集" class="headerlink" title="5.4、卡顿信息采集（key = [JFCLY]_Stutter）当卡顿时间超过150ms时采集"></a>5.4、卡顿信息采集（key = [JFCLY]_Stutter）当卡顿时间超过150ms时采集</h5><blockquote>
 <ul>
 <li><strong>name</strong>        // 卡顿</li>
 <li><strong>segment</strong>     // 系统标识，（iOS、macOS、watchOS、tvOS)</li>
 <li><strong>stutter</strong>     // 卡顿时所有线程的栈信息</li>
 </ul>
 </blockquote>
-<p>###六、崩溃信息：</p>
-<blockquote>
+<h3 id="六、崩溃信息："><a href="#六、崩溃信息：" class="headerlink" title="六、崩溃信息："></a>六、崩溃信息：</h3><blockquote>
 <ul>
 <li><strong>crash =</strong> // crash为json对象，经过URLEncode</li>
 <li>{</li>
@@ -386,9 +396,9 @@ unloadEventStart = 0;
 <li><strong>_nonfatal</strong>            // 是否是系统抛出的崩溃信息，true不是，false是</li>
 <li><strong>_density</strong>            // 屏幕缩放比例</li>
 <li><strong>_carrier</strong>            // 运营商</li>
-<li>==<strong>_locale</strong>            // 系统语言==</li>
-<li>==<strong>_ip</strong>                // 设备IP地址==</li>
-<li>==<strong>_gps</strong>                // 设备GPS经纬度，格式(latitude,longitude)==</li>
+<li><strong>_locale</strong>            // 系统语言</li>
+<li><strong>_ip</strong>                // 设备IP地址</li>
+<li><strong>_gps</strong>                // 设备GPS经纬度，格式(latitude,longitude)</li>
 <li><strong>_cpu_current</strong>   // 当前的CPU使用率</li>
 <li><strong>_ram_current</strong>     // 当前的ram空间</li>
 <li><strong>_ram_total</strong>        // 设备ram总大小</li>
